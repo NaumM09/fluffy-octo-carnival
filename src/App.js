@@ -13,6 +13,11 @@ import {
   FaClock,
 } from 'react-icons/fa';
 
+// Import your images - make sure these paths match your actual file structure
+import welcomeScreen from './welcome_screen.png';
+import authScreen from './auth_screen.png';
+import homeScreen from './home_screen.png';
+
 // Constants
 const APP_STORE_URL = 'https://apps.apple.com/app/zoolo';
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.zoolo';
@@ -33,118 +38,6 @@ const ZooloLogo = ({ size = 32, darkMode = false }) => {
     </div>
   );
 };
-
-// Inline SVG Home Screen Component
-const HomeScreenSVG = () => (
-  <svg viewBox="0 0 944 2048" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%' }}>
-    {/* Phone Background */}
-    <rect width="944" height="2048" fill="#F8FAFC"/>
-    
-    {/* Status Bar */}
-    <rect y="0" width="944" height="88" fill="white"/>
-    <text x="80" y="60" fill="#0F172A" fontSize="36" fontWeight="700">9:41</text>
-    
-    {/* Header with Logo */}
-    <rect y="88" width="944" height="120" fill="white"/>
-    <line x1="0" y1="208" x2="944" y2="208" stroke="#F1F5F9" strokeWidth="2"/>
-    
-    {/* ZOOLO Logo in Header */}
-    <g transform="translate(80, 130)">
-      <text fontSize="48" fontWeight="900" letterSpacing="-3">
-        <tspan fill="#0F172A">Z</tspan>
-        <tspan fill="#0F172A">O</tspan>
-        <tspan fill="#10B981">O</tspan>
-        <tspan fill="#0F172A">L</tspan>
-        <tspan fill="#0F172A">O</tspan>
-      </text>
-    </g>
-    
-    {/* Main Content Area */}
-    <g transform="translate(80, 280)">
-      {/* Greeting */}
-      <text y="0" fill="#64748B" fontSize="28" fontWeight="600">Good morning</text>
-      
-      {/* Main Title */}
-      <text y="60" fill="#0F172A" fontSize="64" fontWeight="900" letterSpacing="-2">Find transport</text>
-      
-      {/* Search Card */}
-      <rect y="140" width="784" height="380" rx="32" fill="white" stroke="#E2E8F0" strokeWidth="2"/>
-      
-      {/* Pickup Location Row */}
-      <g transform="translate(40, 190)">
-        <circle cx="24" cy="24" r="24" fill="#D1FAE5"/>
-        <circle cx="24" cy="24" r="8" fill="#10B981"/>
-        <text x="70" y="32" fill="#0F172A" fontSize="32" fontWeight="600">Cape Town</text>
-      </g>
-      
-      {/* Divider 1 */}
-      <line x1="40" y1="270" x2="824" y2="270" stroke="#F1F5F9" strokeWidth="2"/>
-      
-      {/* Destination Row */}
-      <g transform="translate(40, 300)">
-        <rect x="8" y="8" width="32" height="32" rx="16" fill="#FEE2E2"/>
-        <path d="M24 12 L24 32 M18 26 L24 32 L30 26" stroke="#EF4444" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <text x="70" y="32" fill="#0F172A" fontSize="32" fontWeight="600">Johannesburg</text>
-      </g>
-      
-      {/* Divider 2 */}
-      <line x1="40" y1="380" x2="824" y2="380" stroke="#F1F5F9" strokeWidth="2"/>
-      
-      {/* Date and Search Button Row */}
-      <g transform="translate(40, 420)">
-        {/* Calendar Icon */}
-        <rect x="4" y="4" width="32" height="32" rx="4" stroke="#64748B" strokeWidth="2" fill="none"/>
-        <line x1="12" y1="0" x2="12" y2="8" stroke="#64748B" strokeWidth="2" strokeLinecap="round"/>
-        <line x1="28" y1="0" x2="28" y2="8" stroke="#64748B" strokeWidth="2" strokeLinecap="round"/>
-        <line x1="4" y1="16" x2="36" y2="16" stroke="#64748B" strokeWidth="2"/>
-        
-        <text x="56" y="28" fill="#1E293B" fontSize="30" fontWeight="600">Today</text>
-        
-        {/* Search Button */}
-        <circle cx="724" cy="24" r="48" fill="#10B981"/>
-        <g transform="translate(708, 8)">
-          <circle cx="16" cy="16" r="10" stroke="white" strokeWidth="3" fill="none"/>
-          <line x1="23" y1="23" x2="30" y2="30" stroke="white" strokeWidth="3" strokeLinecap="round"/>
-        </g>
-      </g>
-    </g>
-    
-    {/* Animal Categories Section */}
-    <g transform="translate(80, 800)">
-      {/* Dogs */}
-      <g>
-        <circle cx="72" cy="72" r="72" fill="#DBEAFE"/>
-        <text x="72" y="90" fontSize="72" textAnchor="middle">🐕</text>
-        <text x="72" y="190" fontSize="28" fontWeight="700" fill="#1E293B" textAnchor="middle">Dogs</text>
-        <text x="72" y="225" fontSize="24" fill="#64748B" textAnchor="middle">45 trips</text>
-      </g>
-      
-      {/* Cats */}
-      <g transform="translate(200, 0)">
-        <circle cx="72" cy="72" r="72" fill="#FCE7F3"/>
-        <text x="72" y="90" fontSize="72" textAnchor="middle">🐈</text>
-        <text x="72" y="190" fontSize="28" fontWeight="700" fill="#1E293B" textAnchor="middle">Cats</text>
-        <text x="72" y="225" fontSize="24" fill="#64748B" textAnchor="middle">32 trips</text>
-      </g>
-      
-      {/* Birds */}
-      <g transform="translate(400, 0)">
-        <circle cx="72" cy="72" r="72" fill="#FEF3C7"/>
-        <text x="72" y="90" fontSize="72" textAnchor="middle">🦜</text>
-        <text x="72" y="190" fontSize="28" fontWeight="700" fill="#1E293B" textAnchor="middle">Birds</text>
-        <text x="72" y="225" fontSize="24" fill="#64748B" textAnchor="middle">18 trips</text>
-      </g>
-      
-      {/* Rabbits */}
-      <g transform="translate(600, 0)">
-        <circle cx="72" cy="72" r="72" fill="#E0E7FF"/>
-        <text x="72" y="90" fontSize="72" textAnchor="middle">🐰</text>
-        <text x="72" y="190" fontSize="28" fontWeight="700" fill="#1E293B" textAnchor="middle">Rabbits</text>
-        <text x="72" y="225" fontSize="24" fill="#64748B" textAnchor="middle">12 trips</text>
-      </g>
-    </g>
-  </svg>
-);
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -180,23 +73,22 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section with Welcome Screen */}
       <section className="hero">
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
               <h1 className="hero-title">
-                Animal Transport,<br />Built for Trust.
+                Professional Animal Transport Made Simple
               </h1>
               <p className="hero-subtitle">
-                Safe, reliable transport for your pets and livestock across South Africa. 
-                Connect with verified transporters instantly.
+                Connect with verified transport partners for safe, reliable animal logistics across South Africa
               </p>
               
               <div className="trust-badges minimal">
-                <span>Verified Transporters</span>
-                <span>Nationwide Coverage</span>
-                <span>5-Star Rated</span>
+                <span>Verified Partners</span>
+                <span>Real-Time Tracking</span>
+                <span>Secure Payments</span>
               </div>
 
               <div className="download-buttons">
@@ -219,9 +111,7 @@ function App() {
 
             <div className="hero-image">
               <div className="phone-frame">
-                <div className="phone-screenshot">
-                  <HomeScreenSVG />
-                </div>
+                <img src={welcomeScreen} alt="ZOOLO Welcome Screen" />
               </div>
             </div>
           </div>
@@ -258,24 +148,60 @@ function App() {
               
               <div className="pet-bubble bubble-3">
                 <div className="bubble-content">
-                  <span className="pet-emoji">🐰</span>
-                  <span className="pet-name">Rabbits</span>
+                  <span className="pet-emoji">🦜</span>
+                  <span className="pet-name">Poultry & Birds</span>
                 </div>
               </div>
               
               <div className="pet-bubble bubble-4">
                 <div className="bubble-content">
-                  <span className="pet-emoji">🦜</span>
-                  <span className="pet-name">Birds</span>
+                  <span className="pet-emoji">🐄</span>
+                  <span className="pet-name">Livestock</span>
                 </div>
               </div>
               
               <div className="pet-bubble bubble-5">
                 <div className="bubble-content">
-                  <span className="pet-emoji">🐄</span>
-                  <span className="pet-name">Livestock</span>
+                  <span className="pet-emoji">🦎</span>
+                  <span className="pet-name">Exotics</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Auth Section - Sign Up Prompt */}
+      <section className="auth-section">
+        <div className="container">
+          <div className="auth-content-wrapper">
+            <div className="auth-image">
+              <div className="phone-frame">
+                <img src={authScreen} alt="ZOOLO Sign Up Screen" />
+              </div>
+            </div>
+            <div className="auth-text">
+              <h2 className="section-title-left">Ready to Get Started?</h2>
+              <p className="auth-description">
+                Create your account in seconds and join thousands of pet owners who trust ZOOLO for their animal transport needs. Sign up now to access verified transport partners, real-time tracking, and secure payment protection.
+              </p>
+              <div className="auth-features">
+                <div className="feature-item">
+                  <FaCheckCircle color="#10B981" size={20} />
+                  <span>Quick registration with email or phone</span>
+                </div>
+                <div className="feature-item">
+                  <FaCheckCircle color="#10B981" size={20} />
+                  <span>Secure identity verification</span>
+                </div>
+                <div className="feature-item">
+                  <FaCheckCircle color="#10B981" size={20} />
+                  <span>Instant access to transport partners</span>
+                </div>
+              </div>
+              <button className="primary-cta-button" onClick={handleAppStoreClick}>
+                Create Your Account
+              </button>
             </div>
           </div>
         </div>
@@ -318,7 +244,7 @@ function App() {
                 <FaTruck size={32} color="#10B981" />
               </div>
               <h3>Track Journey</h3>
-              <p>Get real-time GPS tracking and updates as your animal travels safely to their destination.</p>
+              <p>Get real-time updates as your animal travels safely to their destination.</p>
             </div>
           </div>
         </div>
@@ -331,6 +257,19 @@ function App() {
           <p className="section-subtitle">See how ZOOLO keeps you connected every step of the way</p>
           
           <div className="app-features-grid">
+            {/* Home Screen - Search Interface */}
+            <div className="app-feature-card">
+              <div className="home-screen-card">
+                <div className="phone-frame-small">
+                  <img src={homeScreen} alt="ZOOLO Home Screen" />
+                </div>
+              </div>
+              <div className="feature-label">
+                <h3>Easy Search</h3>
+                <p>Find transport partners in seconds with our intuitive search interface</p>
+              </div>
+            </div>
+
             {/* Chat Notification Card */}
             <div className="app-feature-card">
               <div className="phone-notification">
@@ -388,7 +327,7 @@ function App() {
                 </div>
               </div>
               <div className="feature-label">
-                <h3>GPS Tracking</h3>
+                <h3>Real Time Updates</h3>
                 <p>Follow the journey in real-time with live location updates</p>
               </div>
             </div>
@@ -493,43 +432,11 @@ function App() {
                   <FaTruck size={14} color="#64748B" />
                   <span>5 Active Drivers</span>
                 </div>
-                <p className="specialty">Specializes in: Dogs, Cats, Small Animals, Birds</p>
+                <p className="specialty">Specialises in: Dogs, Cats, Small Animals, Poultry</p>
               </div>
               <div className="feature-label">
                 <h3>Trusted Companies</h3>
                 <p>Every transport company is verified with vetted drivers</p>
-              </div>
-            </div>
-
-            {/* Reviews Card */}
-            <div className="app-feature-card">
-              <div className="review-card">
-                <div className="review-header">
-                  <div className="reviewer-avatar">SM</div>
-                  <div className="reviewer-info">
-                    <h4>Sarah M.</h4>
-                    <div className="review-stars">
-                      {[...Array(5)].map((_, i) => (
-                        <FaStar key={i} color="#F59E0B" size={12} />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <p className="review-text">
-                  "PetTrans Express was amazing! Driver John sent photos throughout the journey 
-                  and my cat Max arrived calm and happy. Will definitely use again!"
-                </p>
-                <div className="review-meta">
-                  <span>PetTrans Express</span>
-                  <span>•</span>
-                  <span>Cape Town → Joburg</span>
-                  <span>•</span>
-                  <span>2 days ago</span>
-                </div>
-              </div>
-              <div className="feature-label">
-                <h3>Real Reviews</h3>
-                <p>Read verified reviews from real pet owners</p>
               </div>
             </div>
           </div>
