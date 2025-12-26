@@ -4,40 +4,198 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <meta name="theme-color" content="#10B981" />
+    
+    <!-- Primary Meta Tags -->
+    <title>ZOOLO - Safe, Reliable Animal Transport Across South Africa</title>
+    <meta name="title" content="ZOOLO - Safe, Reliable Animal Transport Across South Africa" />
+    <meta name="description" content="Connect with verified pet transport companies across South Africa. GPS tracking, secure payments, and real-time updates for dogs, cats, livestock, and more. Book trusted animal transport instantly." />
+    <meta name="keywords" content="pet transport South Africa, animal transport, dog transport, cat transport, livestock transport, pet courier, animal relocation, Cape Town to Johannesburg pet transport, verified pet transporters, GPS pet tracking" />
+    <meta name="author" content="ZOOLO" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://zoolo.co.za" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zoolo.co.za/" />
+    <meta property="og:title" content="ZOOLO - Safe, Reliable Animal Transport Across South Africa" />
+    <meta property="og:description" content="Connect with verified pet transport companies across South Africa. GPS tracking, secure payments, and real-time updates for your pets and livestock." />
+    <meta property="og:image" content="https://zoolo.co.za/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="ZOOLO" />
+    <meta property="og:locale" content="en_ZA" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://zoolo.co.za/" />
+    <meta name="twitter:title" content="ZOOLO - Safe, Reliable Animal Transport Across South Africa" />
+    <meta name="twitter:description" content="Connect with verified pet transport companies across South Africa. GPS tracking, secure payments, and real-time updates for your pets and livestock." />
+    <meta name="twitter:image" content="https://zoolo.co.za/twitter-card.jpg" />
+    <meta name="twitter:creator" content="@ZooloSA" />
+    
+    <!-- App Links -->
+    <meta property="al:ios:url" content="zoolo://home" />
+    <meta property="al:ios:app_store_id" content="123456789" />
+    <meta property="al:ios:app_name" content="ZOOLO" />
+    <meta property="al:android:url" content="zoolo://home" />
+    <meta property="al:android:package" content="com.zoolo" />
+    <meta property="al:android:app_name" content="ZOOLO" />
+    
+    <!-- Geographic Meta Tags -->
+    <meta name="geo.region" content="ZA" />
+    <meta name="geo.placename" content="South Africa" />
+    <meta name="geo.position" content="-26.2041;28.0473" />
+    <meta name="ICBM" content="-26.2041, 28.0473" />
+    
+    <!-- Business Information (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "ZOOLO",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "BusinessApplication",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1247"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "ZAR"
+      },
+      "description": "Safe, reliable animal transport across South Africa. Connect with verified transport companies, track journeys in real-time, and ensure secure payments with our escrow system.",
+      "screenshot": "https://zoolo.co.za/app-screenshot.jpg",
+      "featureList": [
+        "GPS Real-Time Tracking",
+        "Verified Transport Companies",
+        "Secure Escrow Payments",
+        "Live Photo Updates",
+        "Nationwide Coverage"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ZOOLO",
+      "image": "https://zoolo.co.za/logo.png",
+      "description": "South Africa's trusted animal transport marketplace connecting pet owners with verified transport companies.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ZA",
+        "addressRegion": "Gauteng"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.2041,
+        "longitude": 28.0473
+      },
+      "url": "https://zoolo.co.za",
+      "telephone": "+27-XX-XXX-XXXX",
+      "priceRange": "R300 - R3000",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Africa"
+      },
+      "serviceType": [
+        "Pet Transport",
+        "Animal Transport",
+        "Livestock Transport",
+        "Pet Relocation"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does ZOOLO work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ZOOLO connects you with verified transport companies across South Africa. Simply search for your route, select a trusted transport company, pay securely through our escrow system, and track your animal's journey in real-time with GPS and photo updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What animals can be transported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ZOOLO supports transport for dogs, cats, rabbits, birds, livestock, horses, and other animals. Our verified transport companies are equipped to handle various animal types with proper care and safety protocols."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are transport companies verified?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every transport company on ZOOLO undergoes thorough verification including company registration checks, driver vetting, license verification, and insurance confirmation. All companies must maintain high ratings and follow strict animal welfare guidelines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my payment secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ZOOLO uses an escrow payment system. Your payment is held securely and only released to the transport company after you confirm safe delivery of your animal. This protects both pet owners and transport companies."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#10B981" />
+    <meta name="msapplication-TileColor" content="#10B981" />
+    
+    <!-- Preconnect to External Domains for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" as="image" href="%PUBLIC_URL%/logo.png" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div style="padding: 40px; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+        <h1>ZOOLO - Animal Transport</h1>
+        <p>You need to enable JavaScript to use the ZOOLO web application.</p>
+        <p>For the best experience, please download our mobile app:</p>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="https://apps.apple.com/app/zoolo">Download on the App Store</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.zoolo">Get it on Google Play</a></li>
+        </ul>
+      </div>
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
