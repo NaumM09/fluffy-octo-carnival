@@ -67,7 +67,7 @@ function App() {
             <ZooloLogo size={28} />
             <div className="nav-links">
               <a href="#features">Features</a>
-              <a href="#download" className="nav-cta">Get App</a>
+              <a href="#download" className="nav-cta">Download App</a>
             </div>
           </div>
         </div>
