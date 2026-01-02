@@ -11,6 +11,7 @@ import {
   FaMapMarkedAlt,
   FaLock
 } from 'react-icons/fa';
+import "./../LegalPages.css";
 
 const Services = () => {
   const services = [

@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ZooloLogo from './ZooloLogo';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="footer">
       <div className="container">
@@ -12,13 +15,13 @@ const Footer = () => {
             <p className="footer-location">Operating across South Africa</p>
           </div>
           <div className="footer-links">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
-            <a href="#support">Support</a>
+            <Link to="/privacy">Privacy Policy</Link>
+            <Link to="/terms">Terms of Service</Link>
+            <Link to="/support">Support</Link>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© 2025 ZOOLO. All rights reserved.</p>
+          <p>© {currentYear} ZOOLO. All rights reserved.</p>
         </div>
       </div>
     </footer>
